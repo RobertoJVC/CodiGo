@@ -48,5 +48,8 @@ git log
 ```bash
 git show 'id de commit en log'
 ```
-* Cambiar el (master) del git a (main)
 
+* Cambiar el (master) del git a (main)
+```bash
+git branch -M main
+```
