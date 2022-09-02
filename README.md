@@ -56,7 +56,7 @@ git branch -M main
 
 * Enlazar el origen del URL
 ```bash
-git remote add origin URL
+git remote add origin "URL"
 ```
 
 * Cambiar el origen del repo
