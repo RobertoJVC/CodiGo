@@ -53,3 +53,18 @@ git show 'id de commit en log'
 ```bash
 git branch -M main
 ```
+
+* Enlazar el origen del URL
+```bash
+git remote add origin URL
+```
+
+* Cambiar el origen del repo
+```bash
+git remote set-url origin  "url"
+```
+
+* Enlazar al repositorio en GitHub
+```bash
+git push origin main
+```
