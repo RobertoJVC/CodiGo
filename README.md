@@ -81,4 +81,7 @@ git push
 ```bash
 git pull https://github.com/RobertoJVC/CodiGo.git main
 ```
-
+* Crear nueva rama de Git
+```bash
+git branch "nombre de rama"
+```
