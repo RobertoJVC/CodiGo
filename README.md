@@ -89,5 +89,9 @@ git branch "nombre de rama"
 ```bash
 git checkout "nombre de rama"
 ```
-
+* Unir ramas de Git
+    -  la rama debe ser la principal para juntar los cambios del branch         
+```bash
+git merge "nombre de rama"
+```
 
