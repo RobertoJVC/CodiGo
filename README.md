@@ -73,3 +73,12 @@ git push origin main
 ```bash
 git clone https://github.com/RobertoJVC/CodiGo.git
 ```
+* Cargar cambios a repositorio de GitHub de un usuario
+```bash
+git push
+```
+* Traer cambios a repositorio de GitHub de otro usuario
+```bash
+git pull https://github.com/RobertoJVC/CodiGo.git main
+```
+
