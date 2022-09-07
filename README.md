@@ -68,3 +68,8 @@ git remote set-url origin  "url"
 ```bash
 git push origin main
 ```
+
+* Clonar de repositorio en GitHub
+```bash
+git clone https://github.com/RobertoJVC/CodiGo.git
+```
