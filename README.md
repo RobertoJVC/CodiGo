@@ -85,3 +85,7 @@ git pull https://github.com/RobertoJVC/CodiGo.git main
 ```bash
 git branch "nombre de rama"
 ```
+* Cambiar rama de Git
+```bash
+git checkout "nombre de rama"
+```
