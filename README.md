@@ -94,4 +94,4 @@ git checkout "nombre de rama"
 ```bash
 git merge "nombre de rama"
 ```
-
+Ya no esta escrito para CodiGo
