@@ -9,22 +9,25 @@
 <body>
     <form action="">
         <p>
-            <input type="text" placeholder="Ingrese su nombre*">
+            <input type="text" name="nombre" required placeholder="Ingrese su nombre*">
         </p>
         <p>
-            <input type="number" placeholder="Ingrese edad*">
+            <input type="number" style="width: 140px;" maxlength="8" name="docide" required placeholder="Ingrese su DNI*">
         </p>
         <p>
-            <input type="email" placeholder="Ingrese email*">
+            <input type="number" name="edad" required placeholder="Ingrese edad*">
         </p>
         <p>
-            <input type="password" placeholder="Password*">
+            <input type="email" name="email" required placeholder="Ingrese email*">
+        </p>
+        <p>
+            <input type="password" name="password" required placeholder="Password*">
         </p>
         <p>
             <input type="date">
         </p>
         <p>
-            <select name="" id="">
+            <select required name="curso" id="">
                 <option value="" disabled selected>Selecciona un curso</option> 
                 <option value="curso-react">Curso de React</option>
                 <option value="curso-html">Curso de HTML</option>
