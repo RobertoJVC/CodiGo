@@ -1,14 +1,17 @@
+:root {
+    font-size: 16px;
+}
 
 body{
         font-family: 'Comfortaa', cursive;
 }
 
 h1{
-        color: green;
-        background-color: beige;
+        color: silver;
+        background-color: black;
         padding: 20px;
         text-align: center;
-        font-size: 20px;
+        font-size: 3rem;
 }
 
 
@@ -26,11 +29,21 @@ h1{
 
 .product_cell:hover {
     border: 2px dashed red;
-    box-shadow: 0px 0px 10px red;
+    box-shadow: 0px 0px 5px red;
+    cursor: grab;
+}
+
+.product_cell:hover > img {
+    opacity: 50%;
+    border: 2px solid black;
 }
 
 .laptop > h2 {
     color: blue;
+}
+
+.laptop > h2::before {
+    content: "💻 ";
 }
 
 .laptop > h3 {
@@ -43,6 +56,10 @@ h1{
     color: cyan;
 }
 
+.audifono > h2::before {
+    content: "🎧 ";
+}
+
 .audifono > h3 {
     color: gray;
     text-align: right;
@@ -53,11 +70,65 @@ h1{
     color: magenta;
 }
 
+.iphone > h2::before {
+    content: "📱 ";
+}
+
 .iphone > h3 {
     color: green;
     text-align: right;
     padding-right: 10px;
 }
 
+.div_form{
+    width: 400px;
+    margin: 20px auto;
+}
 
+.div_form > form > input {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 65%;
+    font-size: 20px;
+    padding-left: 20px;
+    outline: none;
+}
 
+.div_form > form > input:focus {
+   border: 2px solid blue;
+
+}
+
+.div_form > form > button{
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 25%; 
+    outline: none;
+}
+
+.div_form > form > button:hover {
+    background-color: #666;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+ }
+
+ .div_form > form > button:focus {
+    border: 2px solid red;
+
+ }
+
+ .price::before {
+    content: "$ ";
+    font-size: 12px;
+ }
+
+ .price::after {
+    content: ".00";
+    font-size: 12px;
+ }
+
+ 
