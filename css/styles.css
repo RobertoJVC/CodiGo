@@ -3,7 +3,56 @@ body{
         font-family: 'Comfortaa', cursive;
 }
 
-#div_temas{
-    display: none;
+h1{
+        color: green;
+        background-color: beige;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
 }
+
+
+
+#div_temas{
+    display: none ;
+}
+
+.product_cell{
+    border: 2px solid blue; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 20px;
+}
+
+.laptop > h2 {
+    color: blue;
+}
+
+.laptop > h3 {
+    color: cadetblue;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.audifono > h2 {
+    color: cyan;
+}
+
+.audifono > h3 {
+    color: gray;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.iphone > h2 {
+    color: magenta;
+}
+
+.iphone > h3 {
+    color: green;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
 
