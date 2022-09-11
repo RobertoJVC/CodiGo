@@ -21,15 +21,15 @@ h1{
 }
 
 .product_cell{
-    border: 2px solid blue; 
+    border: 2px solid silver; 
     border-radius: 10px; 
     padding: 10px; 
     margin: 20px;
 }
 
 .product_cell:hover {
-    border: 2px dashed red;
-    box-shadow: 0px 0px 5px red;
+    border: 2px dashed black;
+    box-shadow: 0px 0px 5px black;
     cursor: grab;
 }
 
@@ -47,7 +47,7 @@ h1{
 }
 
 .laptop > h3 {
-    color: cadetblue;
+    color: black;
     text-align: right;
     padding-right: 10px;
 }
@@ -61,7 +61,7 @@ h1{
 }
 
 .audifono > h3 {
-    color: gray;
+    color: black;
     text-align: right;
     padding-right: 10px;
 }
@@ -75,7 +75,7 @@ h1{
 }
 
 .iphone > h3 {
-    color: green;
+    color: black;
     text-align: right;
     padding-right: 10px;
 }
