@@ -4,16 +4,21 @@
 
 body{
         font-family: 'Comfortaa', cursive;
+        font-family: 
 }
 
 h1{
         color: silver;
         background-color: black;
         padding: 20px;
+        font-family: 'Montserrat', sans-serif;
         text-align: center;
         font-size: 3rem;
 }
 
+h2{
+    font-family: 'Nunito', sans-serif;
+}
 
 
 #div_temas{
