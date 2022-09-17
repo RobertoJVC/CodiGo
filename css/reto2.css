@@ -1,0 +1,68 @@
+:root{
+    --primario1: hsl(215, 51%, 70%);
+    --primario2: hsl(178, 100%, 50%);
+    --bgprinc: hsl(217, 54%, 11%);
+    --bgcard: hsl(216, 50%, 16%);
+    --azulosc: hsl(215, 32%, 27%);
+    --blanco: hsl(0, 0%, 100%);
+    --texto: 'Outfit', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+body{
+    background-color: var(--bgprinc);
+    font-family: var(--texto);
+}
+
+.contenedor{
+    background-color: var(--bgcard);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 10px;
+}
+
+.imagen{
+    background-image: url("../img/image-equilibrium.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width:300px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    color: var(--blanco);
+}
+
+.sub-titulo{
+    color: var(--primario1);
+}
+
+.cantidad{
+    color: var(--primario2);
+}
+
+.dias{
+    color: var(--primario1);
+}
+
+.creado{
+    color:var(--primario1)
+}
+
+.nombre{
+    color: var(--blanco);
+}
