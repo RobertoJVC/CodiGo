@@ -4,26 +4,12 @@
     box-sizing: border-box;
 }
 
-
+/*mobile first*/
 body{
    /* background-color: hsl(30, 38%, 92%); */
     background-color: blue;
     
 }
-
-@media (min-width: 600px) {
-    body{
-        background-color: hsl(30, 38%, 92%);
-    }
-}
-
-@media (min-width: 900px) {
-    body{
-        background-color: red;
-    }
-}
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -51,6 +37,31 @@ body{
    border-bottom-left-radius: 8px;
    border-bottom-right-radius: 8px;
    padding: 20px;
+}
+
+.sub-title{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    size: 12px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.title{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin-top: 15px;
+}
+
+.text-content{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
 }
 
 .content-price{
@@ -92,7 +103,31 @@ body{
     cursor: pointer;
 }
 
+.boton2{
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(158, 36%, 37%);
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    display: none;
+}
+
+.boton2:hover{
+    cursor: pointer;
+}
+
+/*md*/
 @media (min-width: 600px) {
+    body{
+        background-color: hsl(30, 38%, 92%);
+    }
     .container {
         flex-direction: row;
     }
@@ -119,13 +154,15 @@ body{
     }
 }
 
+/*ld*/
 @media (min-width: 900px) {
- 
-    
+    body{
+        background-color: red;
+    }
     .left-image{
         background-size: cover;
         background-position: 50% 25%;
-        height: 400px;
+        height: 500px;
         width: 400px;
         background-color: hsl(0, 0%, 100%) ;
         border-radius: 0px;
@@ -134,7 +171,7 @@ body{
     }
     
     .content{
-       height: 400px;
+       height: 500px;
        background-color: hsl(0, 0%, 100%);
        width: 400px;
        border-radius: 0px;
@@ -147,6 +184,14 @@ body{
     margin-top: 30px;
     padding: 20px;
     font-size: 20px;
+    }
+
+    .boton2{
+        display: block;
+        margin-top: 30px;
+        padding: 20px;
+        font-size: 20px;
+        background-color: orange;
     }
 
     .content-price{
@@ -165,31 +210,6 @@ body{
 
 }
 
-
-.sub-title{
-    font-family: 'Montserrat', sans-serif;
-    color: hsl(228, 12%, 48%);
-    size: 12px;
-    font-weight: 500;
-    letter-spacing: 4px;
-}
-
-.title{
-    font-family: 'Fraunces', serif;
-    color: hsl(212, 21%, 14%);
-    margin-top: 15px;
-}
-
-.text-content{
-    font-family: 'Montserrat', sans-serif;
-    color: hsl(228, 12%, 48%);
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    
-}
 
 
 

@@ -21,24 +21,134 @@ h2{
 }
 
 
-#div_temas{
+.temas{
     display: block ;
 }
 
-.product_cell{
+.conteiner{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+}
+
+.product_cell1{
     border: 2px solid silver; 
     border-radius: 10px; 
     padding: 10px; 
     margin: 20px;
+    height: 300px;
+    width: 300px;
 }
 
-.product_cell:hover {
+.product_cell1:hover {
     border: 2px dashed black;
     box-shadow: 0px 0px 5px black;
     cursor: grab;
 }
 
-.product_cell:hover > img {
+.product_cell1:hover > img {
+    opacity: 50%;
+    border: 2px solid black;
+}
+
+.product_cell2{
+    border: 2px solid silver; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.product_cell2:hover {
+    border: 2px dashed black;
+    box-shadow: 0px 0px 5px black;
+    cursor: grab;
+}
+
+.product_cell2:hover > img {
+    opacity: 50%;
+    border: 2px solid black;
+}
+.product_cell3{
+    border: 2px solid silver; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.product_cell3:hover {
+    border: 2px dashed black;
+    box-shadow: 0px 0px 5px black;
+    cursor: grab;
+}
+
+.product_cell3:hover > img {
+    opacity: 50%;
+    border: 2px solid black;
+}
+
+.product_cell4{
+    border: 2px solid silver; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.product_cell4:hover {
+    border: 2px dashed black;
+    box-shadow: 0px 0px 5px black;
+    cursor: grab;
+}
+
+.product_cell4:hover > img {
+    opacity: 50%;
+    border: 2px solid black;
+}
+
+.product_cell5{
+    border: 2px solid silver; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.product_cell5:hover {
+    border: 2px dashed black;
+    box-shadow: 0px 0px 5px black;
+    cursor: grab;
+}
+
+.product_cell5:hover > img {
+    opacity: 50%;
+    border: 2px solid black;
+}
+
+.product_cell6{
+    border: 2px solid silver; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.product_cell6:hover {
+    border: 2px dashed black;
+    box-shadow: 0px 0px 5px black;
+    cursor: grab;
+}
+
+.product_cell6:hover > img {
     opacity: 50%;
     border: 2px solid black;
 }
@@ -136,4 +246,14 @@ h2{
     font-size: 12px;
  }
 
- 
+ @media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+ @media (min-width: 900px) {
+     
+ }

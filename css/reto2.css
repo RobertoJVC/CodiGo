@@ -14,41 +14,103 @@
     box-sizing: border-box; 
 }
 
-
 body{
     background-color: var(--bgprinc);
     font-family: var(--texto);
 }
 
-.contenedor{
-    background-color: var(--bgcard);
-    display: grid;
+.principal{
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    border: 10px;
 }
 
-.imagen{
+.contenedor{
+    background-color: var(--bgcard);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 15px;
+
+}
+
+.img{
     background-image: url("../img/image-equilibrium.jpg");
+    display: flex;
+    align-items: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 400px;
-    width:300px;
+    border-radius: 20px;   
+    height: 300px;
+    width: 300px;
+}
+
+.efecto-img{
+    background-image: url(../img/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: var(--primario2);
+    opacity: 0;
+}
+
+.efecto-img:hover{
+    opacity: 0.50;
+    cursor: pointer;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 300px;
+    height: 150px;
+}
+
+.texto > h1 {
+    color: var(--blanco);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+    letter-spacing: .5px;
+}
+
+.texto > h1:hover{
+    color: var(--primario2);
+    cursor: pointer;
+}
+
+.texto > p {
+    color: var(--primario1);
+    font-size: 17px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    letter-spacing: .5px;
 }
 
 .price {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid var(--blanco);
+    padding-bottom: 10px;
 }
 
-.titulo{
-    color: var(--blanco);
+.price-eth{
+    display: flex;
+    gap: 10px;
 }
 
-.sub-titulo{
-    color: var(--primario1);
+.dias-eth{
+    display: flex;
+    gap: 10px;
 }
 
 .cantidad{
@@ -59,10 +121,34 @@ body{
     color: var(--primario1);
 }
 
-.creado{
-    color:var(--primario1)
+.created{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 30px;
+
 }
 
-.nombre{
+.created > div > img{
+    height: 30px;
+    border: 1px solid var(--blanco);
+    border-radius: 50px;
+
+}
+
+.created > div > p {
+    color:var(--primario1);
+    letter-spacing: .3px;
+}
+
+.created > div > p > span{
     color: var(--blanco);
+    letter-spacing: .3px;
+}
+
+.created > div > p > span:hover{
+    color: var(--primario2);
+    cursor: pointer;
 }
