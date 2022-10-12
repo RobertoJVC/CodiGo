@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 8px;
+    background-color: cyan;
+}
+
+
+
+img{
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+}
+
+.desc{
+    padding: 10px;
+    
+}
+
+h4{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    transition: 0.3s all;
+}
+
+/*
+img:hover{
+    transform: rotate(720deg);
+    transform: rotate3d(1,1,1,180deg);
+    transform: scale(2);
+    transition: 1.2s all;
+}
+*/
+
+.burger-menu{
+    height: 60px;
+    width: 120px;
+}
+
+span{
+    display: block;
+    height: 6px;
+    width: 50px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background-color: gray;
+}
+
+.burger-menu:hover .line1{
+    transform: rotate(405deg);
+    margin-top: 25px;
+    transition: 0.2s all;
+}
+
+.burger-menu:hover .line3{
+    transform: rotate(-405deg);
+    margin-top: -16px;
+    transition: 0.2s all;
+}
+
+.burger-menu:hover .line2{
+    display: none;
+}

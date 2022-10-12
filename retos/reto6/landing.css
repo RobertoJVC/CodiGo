@@ -1,0 +1,154 @@
+:root{
+    --bodfont: 'Inter', sans-serif;
+    --headfont: 'Lexend Deca', sans-serif;
+    --primario: hsl(233, 47%, 7%);
+    --primario1: hsl(244, 38%, 16%);
+    --primario2: hsl(277, 64%, 61%);
+    --neutral1: hsl(0, 0%, 100%);
+    --neutral2: hsla(0, 0%, 100%, 0.75);
+    --neutral3: hsla(0, 0%, 100%, 0.6);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    background-color: var(--primario);
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: var(--primario1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    width: 375px;
+}
+
+.arriba{
+    background-image: linear-gradient(hsl(277, 64%, 61%, 0.7),hsl(277, 64%, 61%, 0.7)) 
+    , url("./images/image-header-mobile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; 
+    height: 280px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+.abajo{
+    padding: 15px;
+    text-align: center;
+}
+
+.abajo .cabecera{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.abajo .cabecera > h1{
+    font-family: var(--headfont);
+    color: var(--neutral1);
+    font-size: 1.5em;
+    letter-spacing: 0.7px;
+    word-spacing: 0.7px;
+}
+
+.abajo .cabecera > h1 > span {
+    color: var(--primario2);
+}
+
+.parrafo{
+    margin-top: 15px;
+}
+
+.abajo .parrafo > p {
+    color: var(--neutral3);
+    font-family: var(--bodfont);
+    font-size: 0.8em;
+    letter-spacing: 0.7px;
+    word-spacing: 0.7px;
+    
+}
+
+.companies{
+    margin-top: 12px;
+    color: var(--neutral1);
+    font-family: var(--bodfont);
+}
+
+.companies p {
+    color: var(--neutral3);
+    font-family: var(--bodfont);
+    font-size: 0.6em;
+    font-size: 0.7em;
+    letter-spacing: 0.7px;
+}
+
+.templates{
+    margin-top: 12px;
+    color: var(--neutral1);
+    font-family: var(--bodfont);
+}
+
+.templates p {
+    color: var(--neutral3);
+    font-family: var(--bodfont);
+    font-size: 0.6em;
+    font-size: 0.7em;
+    letter-spacing: 0.7px;
+}
+
+.queries{
+    margin-top: 12px;
+    color: var(--neutral1);
+    font-family: var(--bodfont);
+    
+}
+
+.queries p{
+    margin-top: 5px;
+    color: var(--neutral3);
+    font-family: var(--bodfont);
+    font-size: 0.7em;
+    letter-spacing: 0.7px;
+}
+
+@media (min-width: 375px) {
+    
+    .container{
+        background-color: var(--primario1);
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        width: 100%
+    }
+
+    .arriba{
+        background-image: linear-gradient(hsl(277, 64%, 61%, 0.7),hsl(277, 64%, 61%, 0.7)) 
+        , url("./images/image-header-mobile.jpg");
+        background-size: contain;
+        background-repeat: no-repeat; 
+        height: 280px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .abajo {
+        text-align: left;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./calc.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+<section>
+
+    <div class="calc-header">
+            <h4 class="title">calc</h4>
+            <div class="tema">
+            <h6 class="title">THEME</h6>
+            <div class="seccion-radio">
+            <input type="radio" name="theme" onchange="getColorTheme(this)" value="blue" class="theme">
+            <input type="radio" name="theme" onchange="getColorTheme(this)" value="white" class="theme">
+            <input type="radio" name="theme" onchange="getColorTheme(this)" value="purple"class="theme">  
+            </div>
+            </div>
+    </div>
+
+    
+    <div class="calc-screen">
+        <h1>399.981</h1>
+    </div>
+
+    <div class="calc-btn">
+
+    <div class="hilo1">
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button class="reset">DEL</button>
+    </div>
+
+    <div class="hilo2">
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>+</button>
+    </div>
+
+    <div class="hilo3">
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>-</button>
+    </div>
+
+    <div class="hilo4">
+    <button>.</button>
+    <button>0</button>
+    <button>/</button>
+    <button>x</button>
+    </div>
+
+    <div class="hilo5">
+    <button class="reset btn-grande">RESET</button>
+    <button class="igual btn-grande">=</button>
+
+    </div>
+    
+    
+<div>
+</section>
+</body>
+
+<script>
+    document.documentElement.className = "theme-blue";
+
+    function getColorTheme(input) {
+    document.documentElement.className = `theme-${input.value}`;
+    console.log(input.value);
+    }
+    </script>
+
+</html>

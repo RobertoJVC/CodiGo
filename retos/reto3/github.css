@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Comic Neue', cursive;
+    background-color: #141c2f;
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenedor-princ{
+   
+    width: 600px;
+}
+
+.seccion-1{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.5em;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.7em;
+    letter-spacing: 5px;
+}
+
+.buscador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #202a49;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.cont-search{
+    flex-grow: 2;
+}
+
+.search{
+    background-color: transparent;
+    border: none;
+    margin-left: 15px;
+    font-size: 20px;
+    width: 85%;
+    color: #fff;
+    font-family: 'Comic Neue', cursive;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.btn-search{
+    background-color: #0279fd;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+}
+
+.informacion{
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    background-color: #202a49;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+.informacion img {
+    border-radius: 50%;
+}
